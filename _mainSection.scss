@@ -1,0 +1,126 @@
+@use 'variables' as v;
+
+.all-notifications{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .notification{
+        background-color: v.$white;
+        border-radius: 8px;
+        padding: 17px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        transition: 300ms all ease;
+
+        
+        .order{
+            display: flex;
+            gap: 12px;
+            font-size: 15px;
+            color: v.$GrayishBlue;
+
+            .img{
+                width: 40px;
+                height: 40px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+
+                .notif-text{
+                    .user-highlight{
+                        color: v.$veryDarkBlue;
+                        font-weight: 800;
+
+                        &:hover{
+                            color: v.$blue;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .post-highlight{
+                        color: v.$darkGrayishBlue;
+
+                        &:hover{
+                            color: v.$blue;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .red-dot{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: v.$red;
+                        display: inline-block;
+                        margin-left: 4px;
+                        transition: 300ms all ease;
+                    }
+
+                    .group-highlight{
+                        color: v.$blue;
+                        font-weight: 800;
+                        
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .message-box{
+            width: 19.5em;
+            font-size: 14px;
+            padding: 15px;
+            border: 1px solid v.$lightGrayishBlue1;
+            border-radius: 7px;
+            margin: 10px 0 0 3.5em;
+            color: v.$darkGrayishBlue;
+            transition: 300ms all ease;
+
+            @media only screen and (min-width: 1115px){
+                width: 34.5em;
+                font-size: 16px;
+                padding: 15px 20px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background-color: v.$lightGrayishBlue2;
+            }
+            
+        }
+    }
+
+    .unread{
+        background-color: v.$veryLightGrayishBlue;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .row{
+        flex-direction: row;
+        align-items: center;
+
+        .chess{
+            width: 50px;
+            border: 2px solid transparent;
+            border-radius: 7px;
+
+            &:hover{
+                border-color: v.$lightGrayishBlue2;
+                cursor: pointer;
+            }
+        }
+    }
+}

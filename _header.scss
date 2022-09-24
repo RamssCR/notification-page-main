@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+.notification-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+
+    div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        #notification-number{
+            color: v.$white;
+            background-color: v.$blue;
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .notification-read{
+        color: v.$GrayishBlue;
+
+        &:hover{
+            color: v.$blue;
+            cursor: pointer;
+        }
+    }
+}

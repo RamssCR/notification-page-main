@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+@media only screen and (min-width: 1115px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+  }
+}
+
+.notification-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+}
+.notification-bar div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.notification-bar div #notification-number {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.notification-bar .notification-read {
+  color: hsl(219deg, 14%, 63%);
+}
+.notification-bar .notification-read:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+
+.all-notifications {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.all-notifications .notification {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  padding: 17px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 300ms all ease;
+}
+.all-notifications .notification .order {
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  color: hsl(219deg, 14%, 63%);
+}
+.all-notifications .notification .order .img {
+  width: 40px;
+  height: 40px;
+}
+.all-notifications .notification .order div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.all-notifications .notification .order div .notif-text .user-highlight {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 800;
+}
+.all-notifications .notification .order div .notif-text .user-highlight:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+.all-notifications .notification .order div .notif-text .post-highlight {
+  color: hsl(219deg, 12%, 42%);
+}
+.all-notifications .notification .order div .notif-text .post-highlight:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+.all-notifications .notification .order div .notif-text .red-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: hsl(1deg, 90%, 64%);
+  display: inline-block;
+  margin-left: 4px;
+  transition: 300ms all ease;
+}
+.all-notifications .notification .order div .notif-text .group-highlight {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+.all-notifications .notification .order div .notif-text .group-highlight:hover {
+  cursor: pointer;
+}
+.all-notifications .notification .message-box {
+  width: 19.5em;
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid hsl(211deg, 68%, 94%);
+  border-radius: 7px;
+  margin: 10px 0 0 3.5em;
+  color: hsl(219deg, 12%, 42%);
+  transition: 300ms all ease;
+}
+@media only screen and (min-width: 1115px) {
+  .all-notifications .notification .message-box {
+    width: 34.5em;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+.all-notifications .notification .message-box:hover {
+  cursor: pointer;
+  background-color: hsl(205deg, 33%, 90%);
+}
+.all-notifications .unread {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.all-notifications .unread:hover {
+  cursor: pointer;
+}
+.all-notifications .row {
+  flex-direction: row;
+  align-items: center;
+}
+.all-notifications .row .chess {
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+.all-notifications .row .chess:hover {
+  border-color: hsl(205deg, 33%, 90%);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1115px) {
+  .main-content {
+    width: 700px;
+    margin: 5em auto;
+    font-size: 16px;
+    padding: 15px 20px;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px hsl(219deg, 14%, 63%);
+  }
+}
+
+.attribution {
+  color: hsl(219deg, 12%, 42%);
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 60px;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(219deg, 85%, 26%);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 1115px) {
+  .attribution {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

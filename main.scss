@@ -1,0 +1,36 @@
+@use 'variables';
+@use 'initial';
+@use 'header';
+@use 'mainSection';
+
+.main-content{
+    @media only screen and (min-width: 1115px){
+        width: 700px;
+        margin: 5em auto;
+        font-size: 16px;
+        padding: 15px 20px;
+        background-color: variables.$white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px variables.$GrayishBlue;
+    }
+}
+
+.attribution{
+    color: variables.$darkGrayishBlue;
+    text-align: center;
+    font-size: 0.9em;  
+    margin-top: 60px;
+    
+    a{
+        text-decoration: none;
+        color: variables.$blue;
+        
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    @media only screen and (min-width: 1115px){
+        padding: 10px;
+    }
+}
